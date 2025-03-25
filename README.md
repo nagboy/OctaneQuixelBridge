@@ -16,8 +16,8 @@
 **Installation Instructions:**  
 1. **Download and install the official Quixel plugin** (version 5.5) from [Quixel Plugins](https://quixel.com/plugins/).  
 2. **Edit the Quixel.ms script:**  
-   - Place this line in `Quixel.ms` (located at:  
-     `C:\Users\username\AppData\Local\Autodesk\3dsMax\20xx - 64bit\ENU`):  
+   - Place this line in `Quixel.ms`located at:  
+     `C:\Users\username\AppData\Local\Autodesk\3dsMax\20xx - 64bit\ENU\scripts\startup`
    ```maxscript
    python.Execute "filePath = u'[PATH TO PLUGINFOLDER]/MS_API.py'; exec(open(filePath).read(), {'__file__': filePath})"
    ```
