@@ -1,0 +1,115 @@
+# Octane Render Documentation: Universal Material & Texture Maps
+
+## Universal Material Overview
+The **Octane Universal Material** is a versatile material capable of simulating various real-world materials, including plastics, metals, glass, and more. It supports multiple texture slots, each accepting specific map types as input.
+
+### Material Texture Slots
+- `albedo_tex`
+- `metallic_tex`
+- `specular_tex`
+- `roughness_tex`
+- `opacity_tex`
+- `bump_tex`
+- `normal_tex`
+- `displacement`
+- `emission`
+- Additional specialized slots: sheen, coating, film, etc.
+
+## Important Constraints
+**Displacement Slot Constraint**:  
+The `displacement` slot requires specific displacement-type maps (`Texture_displacement`, `Vertex_displacement`, etc.). RGB or Grayscale images (`Grayscale_image`, `RGB_image`) cannot directly connect to the displacement slot. Instead, they must be placed as input to an appropriate displacement map.
+
+**Example Correct Connection**:
+```maxscript
+dispTex = Texture_displacement()
+dispTex.texture_tex = Grayscale_image()
+universalMat.displacement = dispTex
+```
+
+**Incorrect (Direct RGB/Grayscale)**:
+```maxscript
+-- This will not work and is incorrect
+universalMat.displacement = RGB_image()
+```
+
+---
+
+## Octane Texture Maps (Clear Node Names & Parameters)
+
+### Essential Image-based Nodes
+- **`RGB_image`**: filename, power, gamma, invert
+- **`Grayscale_image`**: filename, power, gamma, invert
+- **`Alpha_image`**: filename, power, gamma, invert
+
+### Displacement-specific Nodes
+- **`Texture_displacement`**: texture_tex, amount, black_level, displacementDirection, levelOfDetail
+- **`Vertex_displacement`**: amount, texture_tex
+- **`Displacement_switch`**: input1, input2
+- **`Displac__Vtx_mixer`**: input1, input2
+
+### Procedural and Noise Textures
+- **`Noise_texture`**: octaves, omega, transform
+- **`Cinema_4D_noise`**: scale, octaves, lacunarity
+- **`FBM_noise`**: octaves, omega
+- **`Turbulence_texture`**: power, transform
+- **`Ridged_fractal_texture`**: octaves, omega
+- **`Fractal_noise`**: octaves, omega
+- **`Marble_texture`**: scale, octaves
+
+### Mix and Composite Nodes
+- **`Mix_texture`**: texture1, texture2, amount
+- **`Multiply_texture`**: texture1, texture2
+- **`Add_texture`**: texture1, texture2
+- **`Subtract_texture`**: texture1, texture2
+- **`Cosine_mix_texture`**: texture1, texture2, amount
+- **`Composite_texture`**: base, layer
+
+### Utility Nodes
+- **`UV_coordinate`**: projection
+- **`UVW_transform`**: scale, rotation, translation
+- **`Gradient_Texture`**: input, gradient
+- **`Color_CorrectiontextureMap`**: brightness, contrast, hue_shift, saturation
+- **`Color_space_conversion`**: sourceSpace, targetSpace
+
+### Special Effects and Patterns
+- **`Dirt_texture`**: strength, radius, detail
+- **`Scratches`**: density, length
+- **`Flakes`**: scale, density
+- **`Tile_patterns`**: pattern, scale
+- **`Woodgrain`**: ring_scale, grain_scale
+- **`Cell_noise`**: scale, detail
+- **`Checks_texture`**: scale, color1, color2
+- **`Chainmail`**: radius, spacing
+
+### Emission and Environment
+- **`Black_body_emission`**: temperature, power
+- **`Texture_emission`**: texture, power
+- **`Texture_environment`**: texture, rotation
+
+---
+
+## MaxScript Example Usage
+### Creating a Universal Material with Displacement
+```maxscript
+-- Create Universal Material
+uniMat = Universal_material()
+
+-- Create and connect displacement node
+dispNode = Texture_displacement()
+dispImage = Grayscale_image()
+dispImage.filename = "displacement.png"
+dispNode.texture_tex = dispImage
+
+dispNode.amount = 10.0
+uniMat.displacement = dispNode
+```
+
+### Adding RGB Image to Albedo Slot
+```maxscript
+-- Albedo setup
+rgbImg = RGB_image()
+rgbImg.filename = "colorTexture.png"
+
+uniMat.albedo_tex = rgbImg
+```
+
