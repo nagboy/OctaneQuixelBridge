@@ -24,7 +24,3 @@
 3. **Overwrite the .py files** in the plugin folder with the ones from this repo.  
 4. **Configure Quixel Bridge** to connect to 3ds Max and set download/export settings.  
 5. **Export a material** – it should work with the latest OctaneRender.
-
----
-
-Simply copy and paste this README text into your repository’s README file.
