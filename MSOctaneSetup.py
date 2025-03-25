@@ -1,5 +1,6 @@
 import os, sys, json
 import MSLiveLinkHelpers
+from pymxs import runtime as rt  # Import pymxs for MAXScript interaction
 
 helper = MSLiveLinkHelpers.LiveLinkHelper()
 
@@ -9,13 +10,13 @@ class OctaneSetup():
         Creates either a single or multi-material for Octane without using any Slate Editor functionality.
         """
         # Debug: Write assetData to C:\temp\assetData.json
-        #debug_path = r"C:\temp\assetData.json"
-        #os.makedirs(os.path.dirname(debug_path), exist_ok=True)
-        #try:
-        #    with open(debug_path, 'w') as f:
-        #        json.dump(vars(assetData), f, indent=4, default=str)
-        #except Exception as e:
-        #    print(f"Failed to write assetData to {debug_path}: {e}")
+        debug_path = r"C:\temp\assetData.json"
+        os.makedirs(os.path.dirname(debug_path), exist_ok=True)
+        try:
+            with open(debug_path, 'w') as f:
+                json.dump(vars(assetData), f, indent=4, default=str)
+        except Exception as e:
+            print(f"Failed to write assetData to {debug_path}: {e}")
 
         # Extract displacement amount from meta
         displacement_amount = 0.013  # Default
@@ -141,6 +142,7 @@ class OctaneSetup():
         Creates an Octane universal_material for opaque surfaces.
         Before each texture assignment, the slot’s input type is set to 2.
         All RGB_image and Grayscale_image nodes share the albedo’s _2D_transformation and Mesh_UV_projection.
+        Scaling is handled directly in the generated MAXScript.
         """
         # Create displacement snippet with LoD and amount from computed values
         displacementSnippet = "--No displacement"
@@ -174,6 +176,7 @@ class OctaneSetup():
             {nodeName}.coatingRoughness_value = 0.01    -- Smooth coating
             """
 
+        # Embed the scaling logic directly in the MAXScript
         matScript = f"""
         {nodeName} = universal_material()
         {nodeName}.name = "{matName}"
@@ -189,8 +192,27 @@ class OctaneSetup():
         -- Create shared transform and projection nodes for albedo
         trans2D = _2D_transformation()
         trans2D.name = "Shared_Transform_9876"
-        trans2D.scale1 = {scan_scale1}
-        trans2D.scale2 = {scan_scale2}
+        -- Base scale from asset metadata (assumed to be in meters)
+        baseScale1 = {scan_scale1}
+        baseScale2 = {scan_scale2}
+        -- Determine the system unit type and set the scale multiplier
+        scaleMultiplier = 1.0  -- Default for meters
+        case units.SystemType of (
+            #meters: scaleMultiplier = 1.0
+            #centimeters: scaleMultiplier = 100.0
+            #millimeters: scaleMultiplier = 1000.0
+            #kilometers: scaleMultiplier = 0.001
+            #inches: scaleMultiplier = 39.3701
+            #feet: scaleMultiplier = 3.28084
+            #miles: scaleMultiplier = 0.000621371
+            default: (
+                format "Warning: Unknown system unit type %, defaulting to meters (scaleMultiplier = 1.0)\n" units.SystemType
+                scaleMultiplier = 1.0
+            )
+        )
+        -- Apply the multiplier to the base scales
+        trans2D.scale1 = baseScale1 * scaleMultiplier
+        trans2D.scale2 = baseScale2 * scaleMultiplier
         meshUV = Mesh_UV_projection()
         meshUV.name = "Shared_Projection_5678"
 
