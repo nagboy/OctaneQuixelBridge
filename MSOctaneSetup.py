@@ -60,6 +60,13 @@ class OctaneSetup():
                 scan_scale2 = scale2
                 break
 
+        # Extract isScaleFixed from meta
+        is_scale_fixed = False  # Default to False
+        for entry in assetData.meta:
+            if entry["key"].lower() == "isscalefixed":
+                is_scale_fixed = entry["value"].lower() == "true"
+                break
+
         # Extract LoD from displacement filename
         displacement_lod = 13  # Default to 8k
         for tex_type, tex_name, tex_path in assetData.textureList:
@@ -107,7 +114,8 @@ class OctaneSetup():
                                                              displacement_lod,
                                                              has_polished,
                                                              scan_scale1,
-                                                             scan_scale2)
+                                                             scan_scale2,
+                                                             is_scale_fixed)
                 zeroBased = index - 1
                 materialScript += f"""
                 {multiNodeName}.materialList[{zeroBased+1}] = {nodeName}
@@ -128,7 +136,8 @@ class OctaneSetup():
                                                      displacement_lod,
                                                      has_polished,
                                                      scan_scale1,
-                                                     scan_scale2)
+                                                     scan_scale2,
+                                                     is_scale_fixed)
             materialScript += f"""
             for o in selection do o.material = {nodeName}
             {nodeName}.showInViewport = true
@@ -137,12 +146,12 @@ class OctaneSetup():
         helper.DeselectEverything()
         return materialScript
 
-    def GetOpaqueMaterial(self, nodeName, matName, useDisplacement, assetType, displacement_amount, displacement_lod, has_polished, scan_scale1, scan_scale2):
+    def GetOpaqueMaterial(self, nodeName, matName, useDisplacement, assetType, displacement_amount, displacement_lod, has_polished, scan_scale1, scan_scale2, is_scale_fixed):
         """
         Creates an Octane universal_material for opaque surfaces.
         Before each texture assignment, the slot’s input type is set to 2.
         All RGB_image and Grayscale_image nodes share the albedo’s _2D_transformation and Mesh_UV_projection.
-        Scaling is handled directly in the generated MAXScript.
+        Scaling is handled directly in the generated MAXScript, with a check for isScaleFixed.
         """
         # Create displacement snippet with LoD and amount from computed values
         displacementSnippet = "--No displacement"
@@ -176,7 +185,7 @@ class OctaneSetup():
             {nodeName}.coatingRoughness_value = 0.01    -- Smooth coating
             """
 
-        # Embed the scaling logic directly in the MAXScript
+        # Embed the scaling logic directly in the MAXScript, with a check for isScaleFixed
         matScript = f"""
         {nodeName} = universal_material()
         {nodeName}.name = "{matName}"
@@ -192,27 +201,34 @@ class OctaneSetup():
         -- Create shared transform and projection nodes for albedo
         trans2D = _2D_transformation()
         trans2D.name = "Shared_Transform_9876"
-        -- Base scale from asset metadata (assumed to be in meters)
-        baseScale1 = {scan_scale1}
-        baseScale2 = {scan_scale2}
-        -- Determine the system unit type and set the scale multiplier
-        scaleMultiplier = 1.0  -- Default for meters
-        case units.SystemType of (
-            #meters: scaleMultiplier = 1.0
-            #centimeters: scaleMultiplier = 100.0
-            #millimeters: scaleMultiplier = 1000.0
-            #kilometers: scaleMultiplier = 0.001
-            #inches: scaleMultiplier = 39.3701
-            #feet: scaleMultiplier = 3.28084
-            #miles: scaleMultiplier = 0.000621371
-            default: (
-                format "Warning: Unknown system unit type %, defaulting to meters (scaleMultiplier = 1.0)\n" units.SystemType
-                scaleMultiplier = 1.0
+        -- Check if scale is fixed
+        isScaleFixed = {str(is_scale_fixed).lower()}
+        if isScaleFixed then (
+            trans2D.scale1 = 1.0
+            trans2D.scale2 = 1.0
+        ) else (
+            -- Base scale from asset metadata (assumed to be in meters)
+            baseScale1 = {scan_scale1}
+            baseScale2 = {scan_scale2}
+            -- Determine the system unit type and set the scale multiplier
+            scaleMultiplier = 1.0  -- Default for meters
+            case units.SystemType of (
+                #meters: scaleMultiplier = 1.0
+                #centimeters: scaleMultiplier = 100.0
+                #millimeters: scaleMultiplier = 1000.0
+                #kilometers: scaleMultiplier = 0.001
+                #inches: scaleMultiplier = 39.3701
+                #feet: scaleMultiplier = 3.28084
+                #miles: scaleMultiplier = 0.000621371
+                default: (
+                    format "Warning: Unknown system unit type %, defaulting to meters (scaleMultiplier = 1.0)\n" units.SystemType
+                    scaleMultiplier = 1.0
+                )
             )
+            -- Apply the multiplier to the base scales
+            trans2D.scale1 = baseScale1 * scaleMultiplier
+            trans2D.scale2 = baseScale2 * scaleMultiplier
         )
-        -- Apply the multiplier to the base scales
-        trans2D.scale1 = baseScale1 * scaleMultiplier
-        trans2D.scale2 = baseScale2 * scaleMultiplier
         meshUV = Mesh_UV_projection()
         meshUV.name = "Shared_Projection_5678"
 
