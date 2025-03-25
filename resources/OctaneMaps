@@ -1,0 +1,4043 @@
+== Properties for Absorption ==
+  .compatibilityVersion : integer
+  .scale : float
+  .rayMarchStepPercent : float
+  .shadowRayMarchStepPercent : float
+  .useRayStepLengthForShadowRays : boolean
+  .displacement_input_type : integer
+  .displacement_value : float
+  .displacement_color : color
+  .displacement_tex : texturemap
+  .volumePadding : float
+  .absorption_input_type : integer
+  .absorption_value : float
+  .absorption_color : color
+  .absorption_tex : texturemap
+  .invertAbsorption : boolean
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Add_bloom_AOL ==
+  .enabled : boolean
+  .bloom_power : float
+  .spreadStart : float
+  .spreadEnd : float
+  .spectral_intensity : float
+  .spectral_shift : float
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Add_chromatic_aberration_AOL ==
+  .enabled : boolean
+  .chromaticAberrationIntensity : float
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Add_glare_AOL ==
+  .enabled : boolean
+  .glare_power : float
+  .glare_ray_amount : integer
+  .glare_angle : float
+  .glare_blur : float
+  .spreadStart : float
+  .spreadEnd : float
+  .spectral_intensity : float
+  .spectral_shift : float
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Add_lens_flare_AOL ==
+  .enabled : boolean
+  .lensFlare : float
+  .lensFlareExtent : float
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Add_texture ==
+  .texture1_input_type : integer
+  .texture1_value : float
+  .texture1_color : color
+  .texture1_tex : texturemap
+  .texture2_input_type : integer
+  .texture2_value : float
+  .texture2_color : color
+  .texture2_tex : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Add_vignette_AOL ==
+  .enabled : boolean
+  .vignetting : float
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Adjust_brightness_AOL ==
+  .enabled : boolean
+  .luminance : float
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Adjust_color_balance_CTL ==
+  .enabled : boolean
+  .attachToLayer : boolean
+  .shadows : point3
+  .midtones : point3
+  .highlights : point3
+  .preserveBrightness : boolean
+  .opacity_input_type : integer
+  .opacity_value : float
+  .opacity_color : color
+  .opacity_tex : texturemap
+  .blendMode : integer
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Adjust_contrast_CTL ==
+  .enabled : boolean
+  .attachToLayer : boolean
+  .contrast_input_type : integer
+  .contrast_value : float
+  .contrast_color : color
+  .contrast_tex : texturemap
+  .opacity_input_type : integer
+  .opacity_value : float
+  .opacity_color : color
+  .opacity_tex : texturemap
+  .blendMode : integer
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Adjust_contrast__SDR_only__AOL ==
+  .enabled : boolean
+  .contrast : float
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Adjust_exposure_CTL ==
+  .enabled : boolean
+  .attachToLayer : boolean
+  .exposure_input_type : integer
+  .exposure_value : float
+  .exposure_color : color
+  .exposure_tex : texturemap
+  .opacity_input_type : integer
+  .opacity_value : float
+  .opacity_color : color
+  .opacity_tex : texturemap
+  .blendMode : integer
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Adjust_hue_AOL ==
+  .enabled : boolean
+  .hue : float
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Adjust_hue_CTL ==
+  .enabled : boolean
+  .attachToLayer : boolean
+  .hue_input_type : integer
+  .hue_value : float
+  .hue_color : color
+  .hue_tex : texturemap
+  .opacity_input_type : integer
+  .opacity_value : float
+  .opacity_color : color
+  .opacity_tex : texturemap
+  .blendMode : integer
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Adjust_lightness_CTL ==
+  .enabled : boolean
+  .attachToLayer : boolean
+  .lightness_input_type : integer
+  .lightness_value : float
+  .lightness_color : color
+  .lightness_tex : texturemap
+  .opacity_input_type : integer
+  .opacity_value : float
+  .opacity_color : color
+  .opacity_tex : texturemap
+  .blendMode : integer
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Adjust_opacity_AOL ==
+  .enabled : boolean
+  .opacity : float
+  .affectOcclusionOnly : boolean
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Adjust_saturation_AOL ==
+  .enabled : boolean
+  .saturation : float
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Adjust_saturation_CTL ==
+  .enabled : boolean
+  .attachToLayer : boolean
+  .saturation_input_type : integer
+  .saturation_value : float
+  .saturation_color : color
+  .saturation_tex : texturemap
+  .opacity_input_type : integer
+  .opacity_value : float
+  .opacity_color : color
+  .opacity_tex : texturemap
+  .blendMode : integer
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Adjust_saturation__HSL__CTL ==
+  .enabled : boolean
+  .attachToLayer : boolean
+  .saturationShift_input_type : integer
+  .saturationShift_value : float
+  .saturationShift_color : color
+  .saturationShift_tex : texturemap
+  .opacity_input_type : integer
+  .opacity_value : float
+  .opacity_color : color
+  .opacity_tex : texturemap
+  .blendMode : integer
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Adjust_white_balance_AOL ==
+  .enabled : boolean
+  .white_balance : color
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Adjust_white_balance_CTL ==
+  .enabled : boolean
+  .attachToLayer : boolean
+  .white_balance : color
+  .opacity_input_type : integer
+  .opacity_value : float
+  .opacity_color : color
+  .opacity_tex : texturemap
+  .blendMode : integer
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Alpha_image ==
+  .filename : filename
+  .filename_bitmap : bitmap
+  .filename_bitmaptex : texturemap
+  .bakeInputScale : float
+  .bakeInputResolution : integer array
+  .imgSeqNumDigits : integer
+  .imgSeqLastFileNum : integer
+  .imgSeqStartFrame : integer
+  .imgSeqEndCondition : integer
+  .imgSeqPlaybackRate : float
+  .channelFormat : integer
+  .LayerOptions : string
+  .legacyPngGamma : boolean
+  .power_input_type : integer
+  .power_value : float
+  .power_color : color
+  .power_tex : texturemap
+  .colorSpace : string
+  .gamma : float
+  .invert : boolean
+  .linearSpaceInvert : boolean
+  .transform : texturemap
+  .projection : texturemap
+  .borderModeU : integer
+  .borderModeV : integer
+  .extCamMapped : boolean
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+  .chFormat_comboType : integer
+
+
+== Properties for Angular_field ==
+  .angle1 : float array
+  .angle2 : float
+  .transform : texturemap
+  .projection : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Apply_LUT_AOL ==
+  .filename : filename
+  .enabled : boolean
+  .strength : float
+  .inputColorSpace : integer
+  .outputColorSpace : integer
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Apply_LUT_CTL ==
+  .filename : filename
+  .enabled : boolean
+  .attachToLayer : boolean
+  .inputColorSpace : integer
+  .outputColorSpace : integer
+  .opacity_input_type : integer
+  .opacity_value : float
+  .opacity_color : color
+  .opacity_tex : texturemap
+  .blendMode : integer
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Apply_OCIO_look_AOL ==
+  .enabled : boolean
+  .ocioLook : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Apply_camera_response_curve__SDR_only__AOL ==
+  .enabled : boolean
+  .response : integer
+  .neutralResponse : boolean
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Apply_custom_curve_AOL ==
+  .enabled : boolean
+  .customCurveMode : integer
+  .customCurveMaxValue : float
+  .pointsPrim : point3 array
+  .pointsSecRed : point3 array
+  .pointsSecGreen : point3 array
+  .pointsSecBlue : point3 array
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Apply_custom_curve_CTL ==
+  .enabled : boolean
+  .attachToLayer : boolean
+  .customCurveMode : integer
+  .customCurveMaxValue : float
+  .opacity_input_type : integer
+  .opacity_value : float
+  .opacity_color : color
+  .opacity_tex : texturemap
+  .blendMode : integer
+  .pointsPrim : point3 array
+  .pointsSecRed : point3 array
+  .pointsSecGreen : point3 array
+  .pointsSecBlue : point3 array
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Apply_gamma_curve_CTL ==
+  .enabled : boolean
+  .attachToLayer : boolean
+  .gamma_input_type : integer
+  .gamma_value : float
+  .gamma_color : color
+  .gamma_tex : texturemap
+  .opacity_input_type : integer
+  .opacity_value : float
+  .opacity_color : color
+  .opacity_tex : texturemap
+  .blendMode : integer
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Apply_gamma_curve__SDR_only__AOL ==
+  .enabled : boolean
+  .gamma : float
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Apply_gradient_map_CTL ==
+  .enabled : boolean
+  .attachToLayer : boolean
+  .gradientInterpolationType : integer
+  .gradientInterpolationColorSpace : integer
+  .opacity_input_type : integer
+  .opacity_value : float
+  .opacity_color : color
+  .opacity_tex : texturemap
+  .blendMode : integer
+  .gradPositions : float array
+  .gradColors : color array
+  .gradMaps : texturemap array
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Apply_imager_and_post_processing_AOL ==
+  .enabled : boolean
+  .applyTonemapping : boolean
+  .imager : texturemap
+  .postproc : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Baking_texture ==
+  .texture_input_type : integer
+  .texture_value : float
+  .texture_color : color
+  .texture_tex : texturemap
+  .enabled : boolean
+  .resolution : integer array
+  .sampling_rate : integer
+  .tonemapType : integer
+  .rgbBaking : boolean
+  .power_input_type : integer
+  .power_value : float
+  .power_color : color
+  .power_tex : texturemap
+  .gamma : float
+  .invert : boolean
+  .linearSpaceInvert : boolean
+  .transform : texturemap
+  .projection : texturemap
+  .borderModeU : integer
+  .borderModeV : integer
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Binary_math_operation ==
+  .texture1_input_type : integer
+  .texture1_value : float
+  .texture1_color : color
+  .texture1_tex : texturemap
+  .texture2_input_type : integer
+  .texture2_value : float
+  .texture2_color : color
+  .texture2_tex : texturemap
+  .operationType : integer
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Binary_math_operation_OFL ==
+  .input1 : point3
+  .input2 : point3
+  .operationType : integer
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Black_body_emission ==
+  .efficiency_or_texture_input_type : integer
+  .efficiency_or_texture_value : float
+  .efficiency_or_texture_color : color
+  .efficiency_or_texture_tex : texturemap
+  .power : float
+  .surfaceBrightness : boolean
+  .keepInstancePower : boolean
+  .doubleSided : boolean
+  .temperature : float
+  .normalize : boolean
+  .distribution_input_type : integer
+  .distribution_value : float
+  .distribution_color : color
+  .distribution_tex : texturemap
+  .sampling_rate : float
+  .lightPassId : integer
+  .illumination : boolean
+  .visibleOnSpecular : boolean
+  .visibleOnScatteringVolumes : boolean
+  .transparentEmission : boolean
+  .castShadows : boolean
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Blending_settings ==
+  .compatibilityVersion : integer
+  .blendMode : integer
+  .blendRegionMask : integer
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Blending_settings_switch ==
+  .index : integer
+  .switchMaps : texturemap array
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Bool_switch ==
+  .index : integer
+  .switchMaps : texturemap array
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Bool_value ==
+  .value : boolean
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Boolean_logic_operator ==
+  .input1 : boolean
+  .input2 : boolean
+  .operationType : integer
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Boost_highlights_AOL ==
+  .enabled : boolean
+  .multiplier : float
+  .threshold : float
+  .thresholdSoftness : float
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for BoxtextureMap ==
+  .transform : texturemap
+  .positionType : integer
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Capture_to_custom_AOV ==
+  .texture_input_type : integer
+  .texture_value : float
+  .texture_color : color
+  .texture_tex : texturemap
+  .customAov : integer
+  .overrideTexture_input_type : integer
+  .overrideTexture_value : float
+  .overrideTexture_color : color
+  .overrideTexture_tex : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Cell_noise ==
+  .transform : texturemap
+  .projection : texturemap
+  .rgbNoise : boolean
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Chainmail ==
+  .radius : float
+  .lineWidth : float
+  .transform : texturemap
+  .projection : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Channel_clamp_AOL ==
+  .enabled : boolean
+  .min : float
+  .max : float
+  .colorChannelGroup : integer
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Channel_invert__SDR_only__AOL ==
+  .enabled : boolean
+  .invertColorSpace : integer
+  .colorChannelGroup : integer
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Channel_inverter ==
+  .texture_input_type : integer
+  .texture_value : float
+  .texture_color : color
+  .texture_tex : texturemap
+  .invert : boolean
+  .invert1 : boolean
+  .invert2 : boolean
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Channel_map_range_AOL ==
+  .enabled : boolean
+  .inputMin : float
+  .inputMax : float
+  .clamp : boolean
+  .outputMin : float
+  .outputMax : float
+  .colorChannelGroup : integer
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Channel_mapper ==
+  .texture_input_type : integer
+  .texture_value : float
+  .texture_color : color
+  .texture_tex : texturemap
+  .index : integer
+  .index2 : integer
+  .index3 : integer
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Channel_merger ==
+  .texture1_input_type : integer
+  .texture1_value : float
+  .texture1_color : color
+  .texture1_tex : texturemap
+  .texture2_input_type : integer
+  .texture2_value : float
+  .texture2_color : color
+  .texture2_tex : texturemap
+  .texture3_input_type : integer
+  .texture3_value : float
+  .texture3_color : color
+  .texture3_tex : texturemap
+  .colorSpaceConversion : integer
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Channel_mixer_CTL ==
+  .enabled : boolean
+  .attachToLayer : boolean
+  .weightRed_input_type : integer
+  .weightRed_value : float
+  .weightRed_color : color
+  .weightRed_tex : texturemap
+  .weightGreen_input_type : integer
+  .weightGreen_value : float
+  .weightGreen_color : color
+  .weightGreen_tex : texturemap
+  .weightBlue_input_type : integer
+  .weightBlue_value : float
+  .weightBlue_color : color
+  .weightBlue_tex : texturemap
+  .opacity_input_type : integer
+  .opacity_value : float
+  .opacity_color : color
+  .opacity_tex : texturemap
+  .blendMode : integer
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Channel_picker ==
+  .texture_input_type : integer
+  .texture_value : float
+  .texture_color : color
+  .texture_tex : texturemap
+  .colorSpaceConversion : integer
+  .colorChannel : integer
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Chaos_texture ==
+  .texture_input_type : integer
+  .texture_value : float
+  .texture_color : color
+  .texture_tex : texturemap
+  .resolution : integer array
+  .tileScale : float
+  .coverage : float
+  .blendExponent : float
+  .histogramInvariant : boolean
+  .showStructure : boolean
+  .uvTransform : texturemap
+  .rotationEnabled : boolean
+  .randomSeed : integer
+  .tileRotationMax : integer
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Checks_texture ==
+  .transform : texturemap
+  .projection : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Cinema_4D_noise ==
+  .power_input_type : integer
+  .power_value : float
+  .power_color : color
+  .power_tex : texturemap
+  .noiseType : integer
+  .octaves : float
+  .lacunarity : float
+  .gain : float
+  .transform : texturemap
+  .projection : texturemap
+  .time : float
+  .absolute : boolean
+  .use4d : boolean
+  .sampleRadius : float
+  .randomSeed : integer
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Circle_spiral ==
+  .texture1_input_type : integer
+  .texture1_value : float
+  .texture1_color : color
+  .texture1_tex : texturemap
+  .texture2_input_type : integer
+  .texture2_value : float
+  .texture2_color : color
+  .texture2_tex : texturemap
+  .circleCount : integer
+  .radius1 : float
+  .radius2 : float
+  .time : float
+  .transform : texturemap
+  .projection : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Clamp_texture ==
+  .input_input_type : integer
+  .input_value : float
+  .input_color : color
+  .input_tex : texturemap
+  .min_input_type : integer
+  .min_value : float
+  .min_color : color
+  .min_tex : texturemap
+  .max_input_type : integer
+  .max_value : float
+  .max_color : color
+  .max_tex : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Color_CorrectiontextureMap ==
+  .texture_input_type : integer
+  .texture_value : float
+  .texture_color : color
+  .texture_tex : texturemap
+  .brightness_input_type : integer
+  .brightness_value : float
+  .brightness_color : color
+  .brightness_tex : texturemap
+  .invert : boolean
+  .hue : float
+  .saturation : float
+  .gamma : float
+  .contrast : float
+  .gain : float
+  .exposure : float
+  .mask : float
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Color_key ==
+  .input_input_type : integer
+  .input_value : float
+  .input_color : color
+  .input_tex : texturemap
+  .keyColor_input_type : integer
+  .keyColor_value : float
+  .keyColor_color : color
+  .keyColor_tex : texturemap
+  .mask_input_type : integer
+  .mask_value : float
+  .mask_color : color
+  .mask_tex : texturemap
+  .fillColor_input_type : integer
+  .fillColor_value : float
+  .fillColor_color : color
+  .fillColor_tex : texturemap
+  .cutoffLow : float
+  .cutoffHigh : float
+  .gamma : float
+  .projection : texturemap
+  .cutoffLowU : float
+  .cutoffHighU : float
+  .cutoffLowV : float
+  .cutoffHighV : float
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Color_space_conversion ==
+  .texture_input_type : integer
+  .texture_value : float
+  .texture_color : color
+  .texture_tex : texturemap
+  .colorSpaceConversion : integer
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Color_squares ==
+  .transform : texturemap
+  .projection : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Color_to_UVW ==
+  .compatibilityVersion : integer
+  .texture_input_type : integer
+  .texture_value : float
+  .texture_color : color
+  .texture_tex : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Color_vertex_attribute ==
+  .attributeName : string
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Comparison ==
+  .texture1_input_type : integer
+  .texture1_value : float
+  .texture1_color : color
+  .texture1_tex : texturemap
+  .texture2_input_type : integer
+  .texture2_value : float
+  .texture2_color : color
+  .texture2_tex : texturemap
+  .operationType : integer
+  .texture3_input_type : integer
+  .texture3_value : float
+  .texture3_color : color
+  .texture3_tex : texturemap
+  .texture4_input_type : integer
+  .texture4_value : float
+  .texture4_color : color
+  .texture4_tex : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Comparison_CTL ==
+  .enabled : boolean
+  .attachToLayer : boolean
+  .operationType : integer
+  .texture_input_type : integer
+  .texture_value : float
+  .texture_color : color
+  .texture_tex : texturemap
+  .texture1_input_type : integer
+  .texture1_value : float
+  .texture1_color : color
+  .texture1_tex : texturemap
+  .texture2_input_type : integer
+  .texture2_value : float
+  .texture2_color : color
+  .texture2_tex : texturemap
+  .colorChannelGroup : integer
+  .opacity_input_type : integer
+  .opacity_value : float
+  .opacity_color : color
+  .opacity_tex : texturemap
+  .blendMode : integer
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Compos__tex__legacy ==
+  .clamp : boolean
+  .compatibilityVersion : integer
+  .layer_list : maxObject array
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Composite_texture ==
+  .clamp : boolean
+  .compatibilityVersion : integer
+  .layer_list : texturemap array
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Convert_for_SDR_display__ACES__AOL ==
+  .enabled : boolean
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Convert_for_SDR_display__OCIO__AOL ==
+  .enabled : boolean
+  .ocioView : texturemap
+  .ocioLook : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Convert_for_SDR_display__basic__AOL ==
+  .enabled : boolean
+  .highlightCompression : float
+  .saturate_to_white : float
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Convert_to_grayscale_CTL ==
+  .enabled : boolean
+  .attachToLayer : boolean
+  .weightGrayscale_input_type : integer
+  .weightGrayscale_value : float
+  .weightGrayscale_color : color
+  .weightGrayscale_tex : texturemap
+  .opacity_input_type : integer
+  .opacity_value : float
+  .opacity_color : color
+  .opacity_tex : texturemap
+  .blendMode : integer
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Cosine_mix_texture ==
+  .amount_input_type : integer
+  .amount_value : float
+  .amount_color : color
+  .amount_tex : texturemap
+  .texture1_input_type : integer
+  .texture1_value : float
+  .texture1_color : color
+  .texture1_tex : texturemap
+  .texture2_input_type : integer
+  .texture2_value : float
+  .texture2_color : color
+  .texture2_tex : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Ctx_Layer_group ==
+  .enabled : boolean
+  .passThrough : boolean
+  .opacity_input_type : integer
+  .opacity_value : float
+  .opacity_color : color
+  .opacity_tex : texturemap
+  .blendMode : integer
+  .compositeOperation : integer
+  .layer_list : texturemap array
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Curvature_texture ==
+  .curvatureMode : integer
+  .strength : float
+  .radius : float
+  .dirtMap_input_type : integer
+  .dirtMap_value : float
+  .dirtMap_color : color
+  .dirtMap_tex : texturemap
+  .offset : float
+  .tolerance : float
+  .spread : float
+  .objectIncludeMode : integer
+  .invert_normal : boolean
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Custom_LUT ==
+  .filename : filename
+  .strength : float
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Cylindrical ==
+  .transform : texturemap
+  .positionType : integer
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Digits ==
+  .number : float
+  .digits : integer
+  .decimals : integer
+  .texture_input_type : integer
+  .texture_value : float
+  .texture_color : color
+  .texture_tex : texturemap
+  .enabledColor_input_type : integer
+  .enabledColor_value : float
+  .enabledColor_color : color
+  .enabledColor_tex : texturemap
+  .disabledColor_input_type : integer
+  .disabledColor_value : float
+  .disabledColor_color : color
+  .disabledColor_tex : texturemap
+  .showDisabledComponents : boolean
+  .transform : texturemap
+  .projection : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Dirt_texture ==
+  .strength : float
+  .details : float
+  .radius : float
+  .dirtMap_input_type : integer
+  .dirtMap_value : float
+  .dirtMap_color : color
+  .dirtMap_tex : texturemap
+  .tolerance : float
+  .spread : float
+  .distribution : float
+  .offset : point3
+  .dirtOffsetSpace : integer
+  .objectIncludeMode : integer
+  .invert_normal : boolean
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Discard_checkpoint_AOL ==
+  .enabled : boolean
+  .checkpointName : string
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Displac__Vtx_mixer ==
+  .DispTexMap_Tab : texturemap array
+  .BlendTxType_Tab : integer array
+  .BlendFloat_Tab : float array
+  .BlendTexMap_Tab : texturemap array
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Displacement_switch ==
+  .index : integer
+  .switchMaps : texturemap array
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Distorted_mesh_UV ==
+  .rotation_input_type : integer
+  .rotation_value : float
+  .rotation_color : color
+  .rotation_tex : texturemap
+  .rotationRange : float array
+  .scale_input_type : integer
+  .scale_value : float
+  .scale_color : color
+  .scale_tex : texturemap
+  .scaleRange : float array
+  .translation_input_type : integer
+  .translation_value : float
+  .translation_color : color
+  .translation_tex : texturemap
+  .translationRange : float array
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Dither_for_8_bit_display__SDR_only__AOL ==
+  .enabled : boolean
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Emission_switch ==
+  .index : integer
+  .switchMaps : texturemap array
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for FBM_flow_noise ==
+  .texture1_input_type : integer
+  .texture1_value : float
+  .texture1_color : color
+  .texture1_tex : texturemap
+  .texture2_input_type : integer
+  .texture2_value : float
+  .texture2_color : color
+  .texture2_tex : texturemap
+  .texture3_input_type : integer
+  .texture3_value : float
+  .texture3_color : color
+  .texture3_tex : texturemap
+  .texture4_input_type : integer
+  .texture4_value : float
+  .texture4_color : color
+  .texture4_tex : texturemap
+  .time : float
+  .octaves : integer
+  .look : float
+  .scale : float
+  .warpScale : float
+  .transform : texturemap
+  .projection : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for FBM_noise ==
+  .time : float
+  .octaves : integer
+  .transform : texturemap
+  .projection : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Falloff_map ==
+  .mode : integer
+  .applyBump : boolean
+  .normal : float
+  .grazing : float
+  .falloff_index : float
+  .direction : point3
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Fan_spiral ==
+  .time : float
+  .spin : float
+  .spiralCount : integer
+  .transform : texturemap
+  .projection : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Flakes ==
+  .texture_input_type : integer
+  .texture_value : float
+  .texture_color : color
+  .texture_tex : texturemap
+  .size : float
+  .variance : float
+  .blendFactor : float
+  .transform : texturemap
+  .projection : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Float3_to_color ==
+  .input : point3
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Float_Texture ==
+  .Float_Value : float
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Float_component_picker_OFL ==
+  .input : point3
+  .operationType : integer
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Float_if_OFL ==
+  .switch : boolean
+  .input1 : point3
+  .input2 : point3
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Float_merger_OFL ==
+  .input1 : float
+  .input2 : float
+  .input3 : float
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Float_relational_operator ==
+  .input1 : float
+  .input2 : float
+  .operationType : integer
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Float_switch_OFL ==
+  .index : integer
+  .switchMaps : texturemap array
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Float_to_grayscale ==
+  .input : float
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Float_to_int ==
+  .input : point3
+  .operationType : integer
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Float_value_OFL ==
+  .value : point3
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Floats_to_color ==
+  .input1 : float
+  .input2 : float
+  .input3 : float
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Fractal_flow_noise ==
+  .texture1_input_type : integer
+  .texture1_value : float
+  .texture1_color : color
+  .texture1_tex : texturemap
+  .texture2_input_type : integer
+  .texture2_value : float
+  .texture2_color : color
+  .texture2_tex : texturemap
+  .flow : float
+  .lacunarity : float
+  .flowRate : float
+  .gain : float
+  .advection : float
+  .octaves : integer
+  .attenuation : float
+  .stepNoise : boolean
+  .transform : texturemap
+  .projection : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Fractal_noise ==
+  .mode : integer
+  .texture1_input_type : integer
+  .texture1_value : float
+  .texture1_color : color
+  .texture1_tex : texturemap
+  .texture2_input_type : integer
+  .texture2_value : float
+  .texture2_color : color
+  .texture2_tex : texturemap
+  .time : float
+  .octaves : integer
+  .distortion : float
+  .lacunarity : float
+  .gain : float
+  .turbulent : boolean
+  .transform : texturemap
+  .projection : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Frame_index ==
+  .offset : integer
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Gaussian_spectrum ==
+  .wavelength_input_type : integer
+  .wavelength_value : float
+  .wavelength_color : color
+  .wavelength_tex : texturemap
+  .width_input_type : integer
+  .width_value : float
+  .width_color : color
+  .width_tex : texturemap
+  .power_input_type : integer
+  .power_value : float
+  .power_color : color
+  .power_tex : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Glowing_circle ==
+  .radius : float
+  .lineWidth : float
+  .transform : texturemap
+  .projection : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Gradient_Texture ==
+  .Input : texturemap
+  .interpType : integer
+  .interpColSpace : integer
+  .Positions : float array
+  .Color : color array
+  .TexMap_Tab : texturemap array
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Gradient_generator ==
+  .gradientType : integer
+  .repetitions : float
+  .polygonSides : integer
+  .gamma : float
+  .invert : boolean
+  .transform : texturemap
+  .projection : texturemap
+  .borderMode : integer
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Grayscale_image ==
+  .filename : filename
+  .filename_bitmap : bitmap
+  .filename_bitmaptex : texturemap
+  .bakeInputScale : float
+  .bakeInputResolution : integer array
+  .imgSeqNumDigits : integer
+  .imgSeqLastFileNum : integer
+  .imgSeqStartFrame : integer
+  .imgSeqEndCondition : integer
+  .imgSeqPlaybackRate : float
+  .channelFormat : integer
+  .LayerOptions : string
+  .legacyPngGamma : boolean
+  .power_input_type : integer
+  .power_value : float
+  .power_color : color
+  .power_tex : texturemap
+  .colorSpace : string
+  .gamma : float
+  .invert : boolean
+  .linearSpaceInvert : boolean
+  .transform : texturemap
+  .projection : texturemap
+  .borderModeU : integer
+  .borderModeV : integer
+  .extCamMapped : boolean
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+  .chFormat_comboType : integer
+
+
+== Properties for Grayscale_vertex_attribute ==
+  .attributeName : string
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Hagelslag ==
+  .density : integer
+  .randomSeed : integer
+  .radius : float
+  .size : float
+  .texture_input_type : integer
+  .texture_value : float
+  .texture_color : color
+  .texture_tex : texturemap
+  .transform : texturemap
+  .projection : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for IES_Image ==
+  .filename : filename
+  .filename_bitmap : bitmap
+  .iesPhotometryMode : integer
+  .power_input_type : integer
+  .power_value : float
+  .power_color : color
+  .power_tex : texturemap
+  .colorSpace : string
+  .gamma : float
+  .invert : boolean
+  .linearSpaceInvert : boolean
+  .transform : texturemap
+  .projection : texturemap
+  .borderModeU : integer
+  .borderModeV : integer
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+  .chFormat_comboType : integer
+
+
+== Properties for Image_adjustment ==
+  .compatibilityVersion : integer
+  .input_input_type : integer
+  .input_value : float
+  .input_color : color
+  .input_tex : texturemap
+  .bypass : boolean
+  .strength : float
+  .hueRangeEnabled : boolean
+  .hueRangeCenter_input_type : integer
+  .hueRangeCenter_value : float
+  .hueRangeCenter_color : color
+  .hueRangeCenter_tex : texturemap
+  .hueRangeWidth : float
+  .hueRangeSoftness : float
+  .channelMappingEnabled : boolean
+  .channelMappingRed : integer
+  .channelMappingGreen : integer
+  .channelMappingBlue : integer
+  .brightnessAdjustmentEnabled : boolean
+  .invert : boolean
+  .brightness : float
+  .contrast : float
+  .lift : float
+  .pivot : float
+  .inverseGamma : boolean
+  .gamma : float
+  .colorAdjustmentEnabled : boolean
+  .hueShift : float
+  .saturation : float
+  .tintColor_input_type : integer
+  .tintColor_value : float
+  .tintColor_color : color
+  .tintColor_tex : texturemap
+  .tintStrength : float
+  .outputTintEnabled : boolean
+  .shadows_input_type : integer
+  .shadows_value : float
+  .shadows_color : color
+  .shadows_tex : texturemap
+  .midtones_input_type : integer
+  .midtones_value : float
+  .midtones_color : color
+  .midtones_tex : texturemap
+  .highlights_input_type : integer
+  .highlights_value : float
+  .highlights_color : color
+  .highlights_tex : texturemap
+  .midtoneLevel : float
+  .clamp : boolean
+  .clampLow : float
+  .clampHigh : float
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Image_file_AOL ==
+  .filename : filename
+  .filename_bitmap : bitmap
+  .imgSeqNumDigits : integer
+  .imgSeqLastFileNum : integer
+  .imgSeqStartFrame : integer
+  .imgSeqEndCondition : integer
+  .imgSeqPlaybackRate : float
+  .channelFormat : integer
+  .LayerOptions : string
+  .legacyPngGamma : boolean
+  .enabled : boolean
+  .colorSpace : string
+  .premultiplied_alpha : boolean
+  .blendingSettings : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+  .chFormat_comboType : integer
+  .aovImage_UseViewportBackground : boolean
+  .aovImage_ResizeType : integer
+  .aovImage_ResizeUnfiltered : boolean
+  .Image_SaveScaledToFile : boolean
+
+
+== Properties for Image_resolution ==
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Image_tiles ==
+  .TilesSource : integer
+  .filename_bitmaptex : texturemap
+  .imageColorFormat : integer
+  .gridSize : integer array
+  .ImageFilenames_list : filename array
+  .ImageFilenames_ofsU : integer array
+  .ImageFilenames_ofsV : integer array
+  .channelFormat : integer
+  .LayerOptions : string
+  .legacyPngGamma : boolean
+  .power_input_type : integer
+  .power_value : float
+  .power_color : color
+  .power_tex : texturemap
+  .colorSpace : string
+  .gamma : float
+  .invert : boolean
+  .linearSpaceInvert : boolean
+  .transform : texturemap
+  .projection : texturemap
+  .emptyTileColor : color
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+  .chFormat_comboType : integer
+
+
+== Properties for Imager ==
+  .exposure : float
+  .hotpixel_removal : float
+  .vignetting : float
+  .white_balance_input_type : integer
+  .white_balance_value : float
+  .white_balance_color : color
+  .white_balance_tex : texturemap
+  .saturation : float
+  .disablePartialAlpha : boolean
+  .dithering : boolean
+  .min_display_samples : integer
+  .maxTonemapInterval : integer
+  .ocioView : texturemap
+  .ocioLook : texturemap
+  .ocioForceToneMapping : boolean
+  .acesToneMapping : boolean
+  .highlightCompression : float
+  .saturate_to_white : float
+  .order : integer
+  .response : integer
+  .neutralResponse : boolean
+  .gamma : float
+  .lut : texturemap
+  .denoiser : boolean
+  .denoiserType : integer
+  .denoiseVolume : boolean
+  .denoisePrefilter : boolean
+  .denoiserOnce : boolean
+  .minDenoiserSamples : integer
+  .maxDenoiserInterval : integer
+  .denoiserOriginalBlend : float
+  .filmUpSamplingMode : integer
+  .upsamplingEnabled : boolean
+  .upsamplingOnCompletion : boolean
+  .minUpsamplingSamples : integer
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Imager_switch ==
+  .index : integer
+  .switchMaps : texturemap array
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Instance_color ==
+  .filename : filename
+  .filename_bitmap : bitmap
+  .filename_bitmaptex : texturemap
+  .bakeInputScale : float
+  .bakeInputResolution : integer array
+  .imgSeqNumDigits : integer
+  .imgSeqLastFileNum : integer
+  .imgSeqStartFrame : integer
+  .imgSeqEndCondition : integer
+  .imgSeqPlaybackRate : float
+  .channelFormat : integer
+  .LayerOptions : string
+  .legacyPngGamma : boolean
+  .power_input_type : integer
+  .power_value : float
+  .power_color : color
+  .power_tex : texturemap
+  .colorSpace : string
+  .gamma : float
+  .invert : boolean
+  .linearSpaceInvert : boolean
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+  .chFormat_comboType : integer
+
+
+== Properties for Instance_highlight ==
+  .input1_input_type : integer
+  .input1_value : float
+  .input1_color : color
+  .input1_tex : texturemap
+  .input2_input_type : integer
+  .input2_value : float
+  .input2_color : color
+  .input2_tex : texturemap
+  .instanceId : integer
+  .swapInputs : boolean
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Instance_position ==
+  .transform : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Instance_range ==
+  .max : integer
+  .invert : boolean
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Int_component_picker ==
+  .input : integer array
+  .operationType : integer
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Int_if ==
+  .switch : boolean
+  .input1 : integer array
+  .input2 : integer array
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Int_merger ==
+  .input1 : integer
+  .input2 : integer
+  .input3 : integer
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Int_relational_operator ==
+  .input1 : integer
+  .input2 : integer
+  .operationType : integer
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Int_switch ==
+  .index : integer
+  .switchMaps : texturemap array
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Int_to_float_OFL ==
+  .input : integer array
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Int_value ==
+  .value : integer array
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Invert_texture ==
+  .texture_input_type : integer
+  .texture_value : float
+  .texture_color : color
+  .texture_tex : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Iridescent ==
+  .texture_input_type : integer
+  .texture_value : float
+  .texture_color : color
+  .texture_tex : texturemap
+  .texture1_input_type : integer
+  .texture1_value : float
+  .texture1_color : color
+  .texture1_tex : texturemap
+  .texture2_input_type : integer
+  .texture2_value : float
+  .texture2_color : color
+  .texture2_tex : texturemap
+  .texture3_input_type : integer
+  .texture3_value : float
+  .texture3_color : color
+  .texture3_tex : texturemap
+  .thicknessMap_input_type : integer
+  .thicknessMap_value : float
+  .thicknessMap_color : color
+  .thicknessMap_tex : texturemap
+  .thicknessScale : float
+  .iridescenceExponent : float
+  .frequency : float
+  .noiseFrequency : float
+  .noiseScale : float
+  .offset : float
+  .blendFactor : float
+  .transform : texturemap
+  .projection : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Jittered_color_correction ==
+  .texture_input_type : integer
+  .texture_value : float
+  .texture_color : color
+  .texture_tex : texturemap
+  .randomSeed : integer
+  .brightnessRange : float array
+  .invert : boolean
+  .hueRange : float array
+  .saturationRange : float array
+  .gammaRange : float array
+  .contrastRange : float array
+  .gainRange : float array
+  .exposureRange : float array
+  .mask_input_type : integer
+  .mask_value : float
+  .mask_color : color
+  .mask_tex : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for LUT_switch ==
+  .index : integer
+  .switchMaps : texturemap array
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Layer_group_AOL ==
+  .enabled : boolean
+  .blendingSettings : texturemap
+  .layer_list : texturemap array
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Layer_group__pass_through__AOL ==
+  .enabled : boolean
+  .layer_list : texturemap array
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Legacy_output_AOV_AOL ==
+  .compatibilityVersion : integer
+  .enabled : boolean
+  .input : texturemap
+  .mask : texturemap
+  .maskChannel : integer
+  .invert : boolean
+  .scale : float
+  .colorMultiplier : color
+  .opacity : float
+  .blendColorSpace : integer
+  .blendMode : integer
+  .alphaOperation : integer
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Light_mixer_AOL ==
+  .enabled : boolean
+  .sunlightEnabled : boolean
+  .sunlightScale : float
+  .sunlightTint : color
+  .envLightEnabled : boolean
+  .envLightScale : float
+  .envLightTint : color
+  .light1Enabled : boolean
+  .Light1Scale : float
+  .light1Tint : color
+  .light2Enabled : boolean
+  .Light2Scale : float
+  .light2Tint : color
+  .light3Enabled : boolean
+  .Light3Scale : float
+  .light3Tint : color
+  .light4Enabled : boolean
+  .Light4Scale : float
+  .light4Tint : color
+  .light5Enabled : boolean
+  .Light5Scale : float
+  .light5Tint : color
+  .light6Enabled : boolean
+  .Light6Scale : float
+  .light6Tint : color
+  .light7Enabled : boolean
+  .Light7Scale : float
+  .light7Tint : color
+  .light8Enabled : boolean
+  .Light8Scale : float
+  .light8Tint : color
+  .light9Enabled : boolean
+  .Light9Scale : float
+  .light9Tint : color
+  .light10Enabled : boolean
+  .Light10Scale : float
+  .light10Tint : color
+  .light11Enabled : boolean
+  .Light11Scale : float
+  .light11Tint : color
+  .light12Enabled : boolean
+  .Light12Scale : float
+  .light12Tint : color
+  .light13Enabled : boolean
+  .Light13Scale : float
+  .light13Tint : color
+  .light14Enabled : boolean
+  .Light14Scale : float
+  .light14Tint : color
+  .light15Enabled : boolean
+  .Light15Scale : float
+  .light15Tint : color
+  .light16Enabled : boolean
+  .Light16Scale : float
+  .light16Tint : color
+  .light17Enabled : boolean
+  .Light17Scale : float
+  .light17Tint : color
+  .light18Enabled : boolean
+  .Light18Scale : float
+  .light18Tint : color
+  .light19Enabled : boolean
+  .Light19Scale : float
+  .light19Tint : color
+  .light20Enabled : boolean
+  .Light20Scale : float
+  .light20Tint : color
+  .blendingSettings : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Load_checkpoint_AOL ==
+  .enabled : boolean
+  .checkpointName : string
+  .discardAfterLoad : boolean
+  .blendingSettings : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Mandelbulb ==
+  .iterationCount : integer
+  .power : float
+  .threshold : float
+  .transform : texturemap
+  .projection : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Map_range_CTL ==
+  .enabled : boolean
+  .attachToLayer : boolean
+  .inputMin_input_type : integer
+  .inputMin_value : float
+  .inputMin_color : color
+  .inputMin_tex : texturemap
+  .inputMax_input_type : integer
+  .inputMax_value : float
+  .inputMax_color : color
+  .inputMax_tex : texturemap
+  .clamp : boolean
+  .outputMin_input_type : integer
+  .outputMin_value : float
+  .outputMin_color : color
+  .outputMin_tex : texturemap
+  .outputMax_input_type : integer
+  .outputMax_value : float
+  .outputMax_color : color
+  .outputMax_tex : texturemap
+  .interpolationType : integer
+  .interpolationSteps : integer
+  .colorChannelGroup : integer
+  .opacity_input_type : integer
+  .opacity_value : float
+  .opacity_color : color
+  .opacity_tex : texturemap
+  .blendMode : integer
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Marble_texture ==
+  .power_input_type : integer
+  .power_value : float
+  .power_color : color
+  .power_tex : texturemap
+  .offset_input_type : integer
+  .offset_value : float
+  .offset_color : color
+  .offset_tex : texturemap
+  .octaves : integer
+  .omega_input_type : integer
+  .omega_value : float
+  .omega_color : color
+  .omega_tex : texturemap
+  .variance_input_type : integer
+  .variance_value : float
+  .variance_color : color
+  .variance_tex : texturemap
+  .transform : texturemap
+  .projection : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Mask_with_Cryptomatte_AOL ==
+  .enabled : boolean
+  .cryptomatteType : integer
+  .cryptomatteMattes : string
+  .affectOcclusionOnly : boolean
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Mask_with_layer_group_AOL ==
+  .enabled : boolean
+  .maskChannel : integer
+  .affectOcclusionOnly : boolean
+  .layer_list : texturemap array
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Mask_with_layer_group_CTL ==
+  .enabled : boolean
+  .attachToLayer : boolean
+  .passThrough : boolean
+  .maskChannel : integer
+  .layer_list : texturemap array
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for MatCap ==
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Math__binary__CTL ==
+  .enabled : boolean
+  .attachToLayer : boolean
+  .operationType : integer
+  .texture_input_type : integer
+  .texture_value : float
+  .texture_color : color
+  .texture_tex : texturemap
+  .colorChannelGroup : integer
+  .opacity_input_type : integer
+  .opacity_value : float
+  .opacity_color : color
+  .opacity_tex : texturemap
+  .blendMode : integer
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Math__unary__CTL ==
+  .enabled : boolean
+  .attachToLayer : boolean
+  .operationType : integer
+  .colorChannelGroup : integer
+  .opacity_input_type : integer
+  .opacity_value : float
+  .opacity_color : color
+  .opacity_tex : texturemap
+  .blendMode : integer
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Matrix_effect ==
+  .time : float
+  .texture_input_type : integer
+  .texture_value : float
+  .texture_color : color
+  .texture_tex : texturemap
+  .transform : texturemap
+  .projection : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Medium_switch ==
+  .index : integer
+  .switchMaps : texturemap array
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Mesh_UV_projection ==
+  .uvSet : integer
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Mix_texture ==
+  .amount_input_type : integer
+  .amount_value : float
+  .amount_color : color
+  .amount_tex : texturemap
+  .texture1_input_type : integer
+  .texture1_value : float
+  .texture1_color : color
+  .texture1_tex : texturemap
+  .texture2_input_type : integer
+  .texture2_value : float
+  .texture2_color : color
+  .texture2_tex : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Moire_mosaic ==
+  .shape : integer
+  .size : float
+  .radius : float
+  .blur : float
+  .shift : float
+  .spacing : float array
+  .iterationCount : integer
+  .time : float
+  .transform : texturemap
+  .projection : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Multi_Texture ==
+  .power_input_type : integer
+  .power_value : float
+  .power_color : color
+  .power_tex : texturemap
+  .colorSpace : string
+  .gamma : float
+  .invert : boolean
+  .linearSpaceInvert : boolean
+  .img_file_list : filename array
+  .wrpMulttx_AllowDuplicateFiles : boolean
+  .wrpMulttx_seed : integer
+  .wrpMulttx_useInstanceId : boolean
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Multiply_texture ==
+  .texture1_input_type : integer
+  .texture1_value : float
+  .texture1_color : color
+  .texture1_tex : texturemap
+  .texture2_input_type : integer
+  .texture2_value : float
+  .texture2_color : color
+  .texture2_tex : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Noise_texture ==
+  .power_input_type : integer
+  .power_value : float
+  .power_color : color
+  .power_tex : texturemap
+  .noiseType : integer
+  .octaves : integer
+  .omega : float
+  .transform : texturemap
+  .projection : texturemap
+  .invert : boolean
+  .gamma : float
+  .contrast : float
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for OCIO_look ==
+  .ocioUseViewLook : boolean
+  .ocioLookName : string
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for OCIO_look_switch ==
+  .index : integer
+  .switchMaps : texturemap array
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for OCIO_view ==
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for OCIO_view_switch ==
+  .index : integer
+  .switchMaps : texturemap array
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for OSL_Projection ==
+  .osl_shader_file : filename
+  .compatibilityVersion : integer
+  .pinType_Tab : integer array
+  .pinName_Tab : string array
+  .Float_Tab : float array
+  .Int_Tab : integer array
+  .Bool_Tab : boolean array
+  .TexMap_Tab : texturemap array
+  .Color_Tab : color array
+  .String_Tab : string array
+  .Filename_Tab : filename array
+  .INode_Tab : node array
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for OSL_Texture ==
+  .osl_shader_file : filename
+  .compatibilityVersion : integer
+  .pinType_Tab : integer array
+  .pinName_Tab : string array
+  .Float_Tab : float array
+  .Int_Tab : integer array
+  .Bool_Tab : boolean array
+  .TexMap_Tab : texturemap array
+  .Color_Tab : color array
+  .String_Tab : string array
+  .Filename_Tab : filename array
+  .INode_Tab : node array
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for OSL_delayed_UV ==
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Object_layer_color ==
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Open_Image_Denoise_AOL ==
+  .enabled : boolean
+  .albedo : texturemap
+  .normal : texturemap
+  .prefilter : boolean
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for OtlClamp ==
+  .enabled : boolean
+  .attachToLayer : boolean
+  .min_input_type : integer
+  .min_value : float
+  .min_color : color
+  .min_tex : texturemap
+  .max_input_type : integer
+  .max_value : float
+  .max_color : color
+  .max_tex : texturemap
+  .colorChannelGroup : integer
+  .opacity_input_type : integer
+  .opacity_value : float
+  .opacity_color : color
+  .opacity_tex : texturemap
+  .blendMode : integer
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for OtlTexture ==
+  .enabled : boolean
+  .input_input_type : integer
+  .input_value : float
+  .input_color : color
+  .input_tex : texturemap
+  .opacity_input_type : integer
+  .opacity_value : float
+  .opacity_color : color
+  .opacity_tex : texturemap
+  .blendMode : integer
+  .compositeOperation : integer
+  .alphaOperation : integer
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Output_AOV ==
+  .enabled : boolean
+  .layer_list : texturemap array
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Output_AOV_group ==
+  .output_list : texturemap array
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Output_AOV_group_switch ==
+  .index : integer
+  .switchMaps : texturemap array
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Output_AOV_layer_switch_AOL ==
+  .index : integer
+  .switchMaps : texturemap array
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Output_AOV_parameter ==
+  .parameterIndex : integer
+  .sourceChannels : integer
+  .transform : texturemap
+  .projection : texturemap
+  .borderModeU : integer
+  .borderModeV : integer
+  .filterType : integer
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Output_AOV_switch ==
+  .index : integer
+  .switchMaps : texturemap array
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Perspective ==
+  .transform : texturemap
+  .positionType : integer
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Phase_function_switch ==
+  .index : integer
+  .switchMaps : texturemap array
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for PhxParticleTex ==
+  .PhxPtcTx_Sim_INode : node
+  .PhxPtcTx_PtcGroupName : string
+  .PhxPtcTx_PtcColor : color
+  .PhxPtcTx_NoPtcColor : color
+  .PhxPtcTx_PtcSize : worldUnits
+  .PhxPtcTx_PtcSizeDivider : float
+  .PhxPtcTx_BlendPercent : float
+  .PhxPtcTx_CacheLocationType : integer
+  .PhxPtcTx_CacheUserPath : string
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Pixel_flow ==
+  .time : float
+  .frequency : float array
+  .density : float
+  .transform : texturemap
+  .projection : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Planar_field ==
+  .distance : float
+  .transform : texturemap
+  .projection : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Polygon_side ==
+  .invert : boolean
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Post_processing ==
+  .on_off : boolean
+  .cutoff : float
+  .bloom_power : float
+  .glare_power : float
+  .glare_ray_amount : integer
+  .glare_angle : float
+  .glare_blur : float
+  .scaleWithFilm : boolean
+  .spreadStart : float
+  .spreadEnd : float
+  .spectral_intensity : float
+  .spectral_shift : float
+  .chromaticAberrationIntensity : float
+  .lensFlare : float
+  .lensFlareExtent : float
+  .postVolume : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Post_processing_switch ==
+  .index : integer
+  .switchMaps : texturemap array
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Post_volume_effects ==
+  .compatibilityVersion : integer
+  .postFxLightBeamsEnabled : boolean
+  .postFxLightBeamsMediumDensity : float
+  .postFxFogMediaEnabled : boolean
+  .postFxFogExtinctionDistance : float
+  .postFxFogBaseLevel : float
+  .postFxFogHalfDensityHeight : float
+  .postFxFogEnvContribution : float
+  .baseColor_input_type : integer
+  .baseColor_value : float
+  .baseColor_color : color
+  .baseColor_tex : texturemap
+  .mediumRadius : float
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Post_volume_switch ==
+  .index : integer
+  .switchMaps : texturemap array
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Procedural_effects ==
+  .operationType : integer
+  .time : float
+  .transform : texturemap
+  .projection : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Projection_switch ==
+  .index : integer
+  .switchMaps : texturemap array
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for RGBSpectrum_Texture ==
+  .RGB_Color : color
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for RGB_image ==
+  .filename : filename
+  .filename_bitmap : bitmap
+  .filename_bitmaptex : texturemap
+  .bakeInputScale : float
+  .bakeInputResolution : integer array
+  .imgSeqNumDigits : integer
+  .imgSeqLastFileNum : integer
+  .imgSeqStartFrame : integer
+  .imgSeqEndCondition : integer
+  .imgSeqPlaybackRate : float
+  .channelFormat : integer
+  .LayerOptions : string
+  .legacyPngGamma : boolean
+  .power_input_type : integer
+  .power_value : float
+  .power_color : color
+  .power_tex : texturemap
+  .colorSpace : string
+  .gamma : float
+  .invert : boolean
+  .linearSpaceInvert : boolean
+  .transform : texturemap
+  .projection : texturemap
+  .borderModeU : integer
+  .borderModeV : integer
+  .extCamMapped : boolean
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+  .chFormat_comboType : integer
+
+
+== Properties for Rain_bump ==
+  .time : float
+  .ringCount : float
+  .ringSize : float
+  .density : integer
+  .strength : float
+  .randomSeed : integer
+  .sharpness : float
+  .transform : texturemap
+  .projection : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Random_color_texture ==
+  .randomSeed : integer
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Random_map ==
+  .input_input_type : integer
+  .input_value : float
+  .input_color : color
+  .input_tex : texturemap
+  .inputScale : integer
+  .noiseType : integer
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Random_walk ==
+  .compatibilityVersion : integer
+  .scale : float
+  .rayMarchStepPercent : float
+  .shadowRayMarchStepPercent : float
+  .useRayStepLengthForShadowRays : boolean
+  .singleScatterFactor : float
+  .displacement_input_type : integer
+  .displacement_value : float
+  .displacement_color : color
+  .displacement_tex : texturemap
+  .volumePadding : float
+  .albedo_input_type : integer
+  .albedo_value : float
+  .albedo_color : color
+  .albedo_tex : texturemap
+  .radius_input_type : integer
+  .radius_value : float
+  .radius_color : color
+  .radius_tex : texturemap
+  .bias : float
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Range_OFL ==
+  .input : float
+  .interpolationType : integer
+  .inputMin : float
+  .inputMax : float
+  .outputMin : float
+  .outputMax : float
+  .interpolationSteps : integer
+  .clamp : boolean
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Ray_direction ==
+  .viewDirection : boolean
+  .coordinateSystem : integer
+  .normalize : boolean
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Ray_switch ==
+  .texture_input_type : integer
+  .texture_value : float
+  .texture_color : color
+  .texture_tex : texturemap
+  .texture1_input_type : integer
+  .texture1_value : float
+  .texture1_color : color
+  .texture1_tex : texturemap
+  .texture2_input_type : integer
+  .texture2_value : float
+  .texture2_color : color
+  .texture2_tex : texturemap
+  .texture3_input_type : integer
+  .texture3_value : float
+  .texture3_color : color
+  .texture3_tex : texturemap
+  .texture4_input_type : integer
+  .texture4_value : float
+  .texture4_color : color
+  .texture4_tex : texturemap
+  .texture5_input_type : integer
+  .texture5_value : float
+  .texture5_color : color
+  .texture5_tex : texturemap
+  .texture6_input_type : integer
+  .texture6_value : float
+  .texture6_color : color
+  .texture6_tex : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Relative_distance ==
+  .distanceMode : integer
+  .transform : texturemap
+  .useFullTransform : boolean
+  .normalize : boolean
+  .normalizationRange : float array
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Remove_hot_pixels_AOL ==
+  .enabled : boolean
+  .hotpixel_removal : float
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Render_AOV_AOL ==
+  .compatibilityVersion : integer
+  .enabled : boolean
+  .input : integer
+  .blendingSettings : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Ridged_fractal_texture ==
+  .power_input_type : integer
+  .power_value : float
+  .power_color : color
+  .power_tex : texturemap
+  .offset_input_type : integer
+  .offset_value : float
+  .offset_color : color
+  .offset_tex : texturemap
+  .octaves : integer
+  .omega_input_type : integer
+  .omega_value : float
+  .omega_color : color
+  .omega_tex : texturemap
+  .lacunarity_input_type : integer
+  .lacunarity_value : float
+  .lacunarity_color : color
+  .lacunarity_tex : texturemap
+  .transform : texturemap
+  .projection : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Rot_fractal ==
+  .time : float
+  .iterationCount : integer
+  .transform : texturemap
+  .projection : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Rotate_OFL ==
+  .input : point3
+  .axis : point3
+  .angle : float
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Sample_pos__to_UV ==
+  .compatibilityVersion : integer
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Sample_position ==
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Save_checkpoint_AOL ==
+  .enabled : boolean
+  .checkpointName : string
+  .clearAfterSave : boolean
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Saw_wave_texture ==
+  .offset_input_type : integer
+  .offset_value : float
+  .offset_color : color
+  .offset_tex : texturemap
+  .transform : texturemap
+  .projection : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Scattering ==
+  .compatibilityVersion : integer
+  .scale : float
+  .rayMarchStepPercent : float
+  .shadowRayMarchStepPercent : float
+  .useRayStepLengthForShadowRays : boolean
+  .singleScatterFactor : float
+  .displacement_input_type : integer
+  .displacement_value : float
+  .displacement_color : color
+  .displacement_tex : texturemap
+  .volumePadding : float
+  .absorption_input_type : integer
+  .absorption_value : float
+  .absorption_color : color
+  .absorption_tex : texturemap
+  .invertAbsorption : boolean
+  .scattering_input_type : integer
+  .scattering_value : float
+  .scattering_color : color
+  .scattering_tex : texturemap
+  .phase : texturemap
+  .emission : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Schlick ==
+  .scattering_direction : float
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Scratches ==
+  .layerCount : integer
+  .curvature : float
+  .rotation : float
+  .frequency : float array
+  .steps : float array
+  .texture_input_type : integer
+  .texture_value : float
+  .texture_color : color
+  .texture_tex : texturemap
+  .randomSeed : integer
+  .transform : texturemap
+  .projection : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Shape_field ==
+  .distance : float
+  .offset : float
+  .geometry : node
+  .transform : texturemap
+  .projection : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Sharpen_AOL ==
+  .enabled : boolean
+  .sharpness : float
+  .radius : float
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Sine_wave_fan ==
+  .intensity : float
+  .amplitude : float
+  .frequency : float
+  .time : float
+  .stripeCount : integer
+  .texture_input_type : integer
+  .texture_value : float
+  .texture_color : color
+  .texture_tex : texturemap
+  .transform : texturemap
+  .projection : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Sine_wave_texture ==
+  .offset_input_type : integer
+  .offset_value : float
+  .offset_color : color
+  .offset_tex : texturemap
+  .transform : texturemap
+  .projection : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Smooth_Voronoi_contours ==
+  .frequency : float
+  .time : float
+  .glossy : boolean
+  .transform : texturemap
+  .projection : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Snow_effect ==
+  .time : float
+  .radius : float
+  .density : integer
+  .strength : float
+  .transform : texturemap
+  .projection : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Solid_color_AOL ==
+  .enabled : boolean
+  .input : color
+  .alphachannel : float
+  .blendingSettings : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Spherical ==
+  .transform : texturemap
+  .positionType : integer
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Spherical_field ==
+  .radius1 : float
+  .radius2 : float
+  .transform : texturemap
+  .projection : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Spotlight ==
+  .orientation : integer
+  .target : point3
+  .coneAngle : float
+  .hardness : float
+  .normalize : boolean
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Star_field ==
+  .density : float
+  .intensityFalloff : float
+  .intensity : float
+  .spectral : boolean
+  .temperatureMin : float
+  .temperatureMax : float
+  .transform : texturemap
+  .projection : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Std_Volume_medium ==
+  .compatibilityVersion : integer
+  .density_input_type : integer
+  .density_value : float
+  .density_color : color
+  .density_tex : texturemap
+  .densityChannel : string
+  .interpolationType : integer
+  .rayMarchStepPercent : float
+  .shadowRayMarchStepPercent : float
+  .useRayStepLengthForShadowRays : boolean
+  .singleScatterFactor : float
+  .displacement_input_type : integer
+  .displacement_value : float
+  .displacement_color : color
+  .displacement_tex : texturemap
+  .volumePadding : float
+  .scatterWeight_input_type : integer
+  .scatterWeight_value : float
+  .scatterWeight_color : color
+  .scatterWeight_tex : texturemap
+  .scatterColor_input_type : integer
+  .scatterColor_value : float
+  .scatterColor_color : color
+  .scatterColor_tex : texturemap
+  .scatterChannel : string
+  .anisotropy_input_type : integer
+  .anisotropy_value : float
+  .anisotropy_color : color
+  .anisotropy_tex : texturemap
+  .transparentWeight_input_type : integer
+  .transparentWeight_value : float
+  .transparentWeight_color : color
+  .transparentWeight_tex : texturemap
+  .transparentDepth_input_type : integer
+  .transparentDepth_value : float
+  .transparentDepth_color : color
+  .transparentDepth_tex : texturemap
+  .transparentChannel : string
+  .emissionType : integer
+  .emissionWeight_input_type : integer
+  .emissionWeight_value : float
+  .emissionWeight_color : color
+  .emissionWeight_tex : texturemap
+  .emissionColor_input_type : integer
+  .emissionColor_value : float
+  .emissionColor_color : color
+  .emissionColor_tex : texturemap
+  .emissionChannel : string
+  .lightPassId : integer
+  .temperatureScale_input_type : integer
+  .temperatureScale_value : float
+  .temperatureScale_color : color
+  .temperatureScale_tex : texturemap
+  .temperatureChannel : string
+  .temperature_input_type : integer
+  .temperature_value : float
+  .temperature_color : color
+  .temperature_tex : texturemap
+  .emissionIntensity_input_type : integer
+  .emissionIntensity_value : float
+  .emissionIntensity_color : color
+  .emissionIntensity_tex : texturemap
+  .temperatureChannelAutoScale : boolean
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Stripes ==
+  .texture1_input_type : integer
+  .texture1_value : float
+  .texture1_color : color
+  .texture1_tex : texturemap
+  .texture2_input_type : integer
+  .texture2_value : float
+  .texture2_color : color
+  .texture2_tex : texturemap
+  .texture3_input_type : integer
+  .texture3_value : float
+  .texture3_color : color
+  .texture3_tex : texturemap
+  .blur : float
+  .lineWidth1 : float
+  .lineWidth2 : float
+  .transform : texturemap
+  .projection : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Subtract_texture ==
+  .texture1_input_type : integer
+  .texture1_value : float
+  .texture1_color : color
+  .texture1_tex : texturemap
+  .texture2_input_type : integer
+  .texture2_value : float
+  .texture2_color : color
+  .texture2_tex : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Sun_direction_OFL ==
+  .latitude : float
+  .longitude : float
+  .month : integer
+  .day : integer
+  .hour : float
+  .gmtoffset : integer
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Surface_tangent_dPdu ==
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Surface_tangent_dPdv ==
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for TexSelector ==
+  .wrpTxSel_textureCount : integer
+  .wrpTxSel_useInstanceId : boolean
+  .wrpTxSel_txTypeArray : integer array
+  .wrpTxSel_txFloatArray : float array
+  .wrpTxSel_txColArray : color array
+  .wrpTxSel_txTexmapArray : texturemap array
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Texture_AOL ==
+  .enabled : boolean
+  .rgbTexture_input_type : integer
+  .rgbTexture_value : float
+  .rgbTexture_color : color
+  .rgbTexture_tex : texturemap
+  .rgbSampleCount : integer
+  .alphaTexture_input_type : integer
+  .alphaTexture_value : float
+  .alphaTexture_color : color
+  .alphaTexture_tex : texturemap
+  .alphaSampleCount : integer
+  .uvTransform : texturemap
+  .blendingSettings : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Texture_displacement ==
+  .texture_input_type : integer
+  .texture_value : float
+  .texture_color : color
+  .texture_tex : texturemap
+  .black_level : float
+  .levelOfDetail : integer
+  .amount : float
+  .displacementDirection : integer
+  .filterType : integer
+  .filtersize : integer
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Texture_emission ==
+  .efficiency_or_texture_input_type : integer
+  .efficiency_or_texture_value : float
+  .efficiency_or_texture_color : color
+  .efficiency_or_texture_tex : texturemap
+  .power : float
+  .surfaceBrightness : boolean
+  .keepInstancePower : boolean
+  .doubleSided : boolean
+  .distribution_input_type : integer
+  .distribution_value : float
+  .distribution_color : color
+  .distribution_tex : texturemap
+  .sampling_rate : float
+  .lightPassId : integer
+  .illumination : boolean
+  .visibleOnSpecular : boolean
+  .visibleOnScatteringVolumes : boolean
+  .transparentEmission : boolean
+  .castShadows : boolean
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Texture_environment ==
+  .texture_input_type : integer
+  .texture_value : float
+  .texture_color : color
+  .texture_tex : texturemap
+  .power : float
+  .importance_sampling : boolean
+  .castPhotons : boolean
+  .medium : texturemap
+  .mediumRadius : float
+  .lightPassMask : integer
+  .visibleEnvironmentBackplate : boolean
+  .visibleEnvironmentReflections : boolean
+  .visibleEnvironmentRefractions : boolean
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Texture_layer_switch_CTL ==
+  .index : integer
+  .switchMaps : texturemap array
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Texture_switch ==
+  .index : integer
+  .switchMaps : texturemap array
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Threshold_CTL ==
+  .enabled : boolean
+  .attachToLayer : boolean
+  .threshold_input_type : integer
+  .threshold_value : float
+  .threshold_color : color
+  .threshold_tex : texturemap
+  .opacity_input_type : integer
+  .opacity_value : float
+  .opacity_color : color
+  .opacity_tex : texturemap
+  .blendMode : integer
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Tile_patterns ==
+  .operationType : integer
+  .texture1_input_type : integer
+  .texture1_value : float
+  .texture1_color : color
+  .texture1_tex : texturemap
+  .texture2_input_type : integer
+  .texture2_value : float
+  .texture2_color : color
+  .texture2_tex : texturemap
+  .texture3_input_type : integer
+  .texture3_value : float
+  .texture3_color : color
+  .texture3_tex : texturemap
+  .lineWidth : float
+  .transform : texturemap
+  .projection : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Time_OFL ==
+  .offset : float
+  .multiplier : float
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Toon_Ramp ==
+  .interpType : integer
+  .interpColSpace : integer
+  .Positions : float array
+  .Color : color array
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Toon_ramp_switch ==
+  .index : integer
+  .switchMaps : texturemap array
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Transform_switch ==
+  .index : integer
+  .switchMaps : texturemap array
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Transform_value ==
+  .rotationOrder : integer
+  .rotation : point3
+  .scale : point3
+  .translation : point3
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Triangle_wave_texture ==
+  .offset_input_type : integer
+  .offset_value : float
+  .offset_color : color
+  .offset_tex : texturemap
+  .transform : texturemap
+  .projection : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Triplanar ==
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Triplanar_map ==
+  .blendAngle : float
+  .positionType : integer
+  .transform : texturemap
+  .single_texture : boolean
+  .texturePosX_input_type : integer
+  .texturePosX_value : float
+  .texturePosX_color : color
+  .texturePosX_tex : texturemap
+  .textureNegX_input_type : integer
+  .textureNegX_value : float
+  .textureNegX_color : color
+  .textureNegX_tex : texturemap
+  .texturePosY_input_type : integer
+  .texturePosY_value : float
+  .texturePosY_color : color
+  .texturePosY_tex : texturemap
+  .textureNegY_input_type : integer
+  .textureNegY_value : float
+  .textureNegY_color : color
+  .textureNegY_tex : texturemap
+  .texturePosZ_input_type : integer
+  .texturePosZ_value : float
+  .texturePosZ_color : color
+  .texturePosZ_tex : texturemap
+  .textureNegZ_input_type : integer
+  .textureNegZ_value : float
+  .textureNegZ_color : color
+  .textureNegZ_tex : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Tripper ==
+  .texture1_input_type : integer
+  .texture1_value : float
+  .texture1_color : color
+  .texture1_tex : texturemap
+  .texture2_input_type : integer
+  .texture2_value : float
+  .texture2_color : color
+  .texture2_tex : texturemap
+  .texture3_input_type : integer
+  .texture3_value : float
+  .texture3_color : color
+  .texture3_tex : texturemap
+  .time : float
+  .transform : texturemap
+  .projection : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Turbulence_texture ==
+  .power_input_type : integer
+  .power_value : float
+  .power_color : color
+  .power_tex : texturemap
+  .offset_input_type : integer
+  .offset_value : float
+  .offset_color : color
+  .offset_tex : texturemap
+  .octaves : integer
+  .omega_input_type : integer
+  .omega_value : float
+  .omega_color : color
+  .omega_tex : texturemap
+  .transform : texturemap
+  .projection : texturemap
+  .turbulence : boolean
+  .invert : boolean
+  .gamma : float
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for UVW_transform ==
+  .texture_input_type : integer
+  .texture_value : float
+  .texture_color : color
+  .texture_tex : texturemap
+  .transform : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for UV_coordinate ==
+  .projection : texturemap
+  .UV_max : float
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Unary_math_operation ==
+  .texture_input_type : integer
+  .texture_value : float
+  .texture_color : color
+  .texture_tex : texturemap
+  .operationType : integer
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Unary_math_operation_OFL ==
+  .input : point3
+  .operationType : integer
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Vertex_displacement ==
+  .compatibilityVersion : integer
+  .texture_input_type : integer
+  .texture_value : float
+  .texture_color : color
+  .texture_tex : texturemap
+  .amount : float
+  .black_level : float
+  .displacementMapType : integer
+  .textureSpace : integer
+  .inputAxes : integer
+  .bump : boolean
+  .subdLevel : integer
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Volume_Ramp ==
+  .interpType : integer
+  .interpColSpace : integer
+  .maxValue : float
+  .Positions : float array
+  .Color : color array
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Volume_cloud ==
+  .time : float
+  .sundir : point3
+  .transform : texturemap
+  .projection : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Volume_medium ==
+  .compatibilityVersion : integer
+  .scale : float
+  .rayMarchStepPercent : float
+  .shadowRayMarchStepPercent : float
+  .useRayStepLengthForShadowRays : boolean
+  .singleScatterFactor : float
+  .displacement_input_type : integer
+  .displacement_value : float
+  .displacement_color : color
+  .displacement_tex : texturemap
+  .volumePadding : float
+  .absorption_input_type : integer
+  .absorption_value : float
+  .absorption_color : color
+  .absorption_tex : texturemap
+  .absorptionRamp : texturemap
+  .invertAbsorption : boolean
+  .scattering_input_type : integer
+  .scattering_value : float
+  .scattering_color : color
+  .scattering_tex : texturemap
+  .scatteringRamp : texturemap
+  .phase : texturemap
+  .emission : texturemap
+  .emissionRamp : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Volume_ramp_switch ==
+  .index : integer
+  .switchMaps : texturemap array
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Volume_to_texture ==
+  .geometry : node
+  .transform : texturemap
+  .projection : texturemap
+  .grid : integer
+  .gridName : string
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for W_coordinate ==
+  .translation : float
+  .scale : float
+  .borderModeWCoord : integer
+  .invert : boolean
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Wave_pattern ==
+  .axis : integer
+  .shape : integer
+  .amplitude : float
+  .amplitudeShift : float
+  .texture1_input_type : integer
+  .texture1_value : float
+  .texture1_color : color
+  .texture1_tex : texturemap
+  .texture2_input_type : integer
+  .texture2_value : float
+  .texture2_color : color
+  .texture2_tex : texturemap
+  .transform : texturemap
+  .projection : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Woodgrain ==
+  .texture1_input_type : integer
+  .texture1_value : float
+  .texture1_color : color
+  .texture1_tex : texturemap
+  .texture2_input_type : integer
+  .texture2_value : float
+  .texture2_color : color
+  .texture2_tex : texturemap
+  .sharpness : float
+  .ringIntensity : float
+  .ringFrequency : float
+  .ringUnevenness : float
+  .ringNoiseScale : float
+  .ringNoiseFrequency : float
+  .graininess : float
+  .grainFrequency : float
+  .trunkNoiseScale : float
+  .trunkNoiseFrequency : float
+  .angularNoiseScale : float
+  .angularNoiseFrequency : float
+  .transform : texturemap
+  .projection : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for XYZ_to_UVW ==
+  .transform : texturemap
+  .positionType : integer
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for Z_DepthtextureMap ==
+  .normalize : boolean
+  .normalizationRange : float array
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for _OLD_Light_mixer_output_AOV ==
+  .imager : boolean
+  .postproc : boolean
+  .sunlightEnabled : boolean
+  .sunlightTint : color
+  .sunlightScale : float
+  .envLightEnabled : boolean
+  .envLightTint : color
+  .envLightScale : float
+  .light1Enabled : boolean
+  .light1Tint : color
+  .Light1Scale : float
+  .light2Enabled : boolean
+  .light2Tint : color
+  .Light2Scale : float
+  .light3Enabled : boolean
+  .light3Tint : color
+  .Light3Scale : float
+  .light4Enabled : boolean
+  .light4Tint : color
+  .Light4Scale : float
+  .light5Enabled : boolean
+  .light5Tint : color
+  .Light5Scale : float
+  .light6Enabled : boolean
+  .light6Tint : color
+  .Light6Scale : float
+  .light7Enabled : boolean
+  .light7Tint : color
+  .Light7Scale : float
+  .light8Enabled : boolean
+  .light8Tint : color
+  .Light8Scale : float
+  .light9Enabled : boolean
+  .light9Tint : color
+  .Light9Scale : float
+  .light10Enabled : boolean
+  .light10Tint : color
+  .Light10Scale : float
+  .light11Enabled : boolean
+  .light11Tint : color
+  .Light11Scale : float
+  .light12Enabled : boolean
+  .light12Tint : color
+  .Light12Scale : float
+  .light13Enabled : boolean
+  .light13Tint : color
+  .Light13Scale : float
+  .light14Enabled : boolean
+  .light14Tint : color
+  .Light14Scale : float
+  .light15Enabled : boolean
+  .light15Tint : color
+  .Light15Scale : float
+  .light16Enabled : boolean
+  .light16Tint : color
+  .Light16Scale : float
+  .light17Enabled : boolean
+  .light17Tint : color
+  .Light17Scale : float
+  .light18Enabled : boolean
+  .light18Tint : color
+  .Light18Scale : float
+  .light19Enabled : boolean
+  .light19Tint : color
+  .Light19Scale : float
+  .light20Enabled : boolean
+  .light20Tint : color
+  .Light20Scale : float
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for fractal ==
+  .transform : texturemap
+  .projection : texturemap
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for normal ==
+  .normalType : integer
+  .coordinateSystem : integer
+  .normalize : boolean
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for position ==
+  .coordinateSystem : integer
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for range ==
+  .compatibilityVersion : integer
+  .input_input_type : integer
+  .input_value : float
+  .input_color : color
+  .input_tex : texturemap
+  .interpolationType : integer
+  .inputMin_input_type : integer
+  .inputMin_value : float
+  .inputMin_color : color
+  .inputMin_tex : texturemap
+  .inputMax_input_type : integer
+  .inputMax_value : float
+  .inputMax_color : color
+  .inputMax_tex : texturemap
+  .outputMin_input_type : integer
+  .outputMin_value : float
+  .outputMin_color : color
+  .outputMin_tex : texturemap
+  .outputMax_input_type : integer
+  .outputMax_value : float
+  .outputMax_color : color
+  .outputMax_tex : texturemap
+  .interpolationSteps : integer
+  .clamp : boolean
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for rotationtextureMap ==
+  .rotationOrder : integer
+  .rotation : point3
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
+
+
+== Properties for scaletextureMap ==
+  .scale : point3
+  .tx_unique_id : integer
+  .saved_plg_vers : integer
+  .saved_oct_vers : integer
+  .octMtlExFlags : integer
